@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "sr-adf-dev"
+		},
+		"azuredb_source_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=srsource.database.windows.net;Initial Catalog=srsource;User ID=sr_admin"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://datalakesource7046.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_tenant": {
+			"value": "cdd161d3-7ba3-47f0-a0f2-086ab04ddc0e"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_servicePrincipalId": {
+			"value": "bab8a2c6-5680-4e9c-b5cd-7e6f57491fbc"
+		},
+		"AzureDataLakeStorage_sink_properties_typeProperties_url": {
+			"value": "https://srdevsink.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage_sink_properties_typeProperties_tenant": {
+			"value": "cdd161d3-7ba3-47f0-a0f2-086ab04ddc0e"
+		},
+		"AzureDataLakeStorage_sink_properties_typeProperties_servicePrincipalId": {
+			"value": "bab8a2c6-5680-4e9c-b5cd-7e6f57491fbc"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://srkeyvoultdev.vault.azure.net/"
+		},
+		"RestService_source_properties_typeProperties_url": {
+			"value": "https://airlabs.co/api/v9/airlines"
+		}
+	}
+}
